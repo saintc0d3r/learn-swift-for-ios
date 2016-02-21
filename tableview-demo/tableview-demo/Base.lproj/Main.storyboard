@@ -90,7 +90,6 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="table_view" destination="Iv3-ly-CyO" id="jeR-YL-qXf"/>
-                        <outlet property="view" destination="Iv3-ly-CyO" id="cT3-4G-dtN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
