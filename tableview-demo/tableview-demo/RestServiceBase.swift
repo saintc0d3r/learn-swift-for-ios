@@ -56,7 +56,7 @@ class RestServiceBase : NSObject {
             request.HTTPMethod = http_method
             
             // 1.2. Serialise the params dictionary as JSON data and assign the JSON into Request's body payload
-            if (params != nil){
+            if ( (params != nil) && (params!.count > 0)){
                 request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(params!, options: .PrettyPrinted)
             }
             
