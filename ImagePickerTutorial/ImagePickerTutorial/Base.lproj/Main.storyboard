@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImagePickerTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INi-nP-eCy" userLabel="Load Image Panel">
+                                <rect key="frame" x="0.0" y="563" width="600" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr2-fg-EWl">
+                                        <rect key="frame" x="260" y="5" width="80" height="30"/>
+                                        <state key="normal" title="Load Image"/>
+                                        <connections>
+                                            <action selector="loadImageButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eS4-1B-oEl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tr2-fg-EWl" firstAttribute="centerX" secondItem="INi-nP-eCy" secondAttribute="centerX" id="5JY-dZ-muO"/>
+                                    <constraint firstAttribute="height" constant="40" id="72I-Di-UZ2"/>
+                                    <constraint firstAttribute="bottom" secondItem="tr2-fg-EWl" secondAttribute="bottom" constant="5" id="JcU-qb-7pz"/>
+                                    <constraint firstItem="tr2-fg-EWl" firstAttribute="top" secondItem="INi-nP-eCy" secondAttribute="top" constant="5" id="PFt-g9-o0l"/>
+                                    <constraint firstItem="tr2-fg-EWl" firstAttribute="centerY" secondItem="INi-nP-eCy" secondAttribute="centerY" id="vE6-WJ-XV5"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Otr-46-zQN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="563"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="INi-nP-eCy" secondAttribute="trailing" id="4mf-hN-W1n"/>
+                            <constraint firstItem="Otr-46-zQN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8eW-n5-7CH"/>
+                            <constraint firstItem="INi-nP-eCy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JcU-qj-Psh"/>
+                            <constraint firstAttribute="trailing" secondItem="Otr-46-zQN" secondAttribute="trailing" id="Jvt-PE-uXR"/>
+                            <constraint firstAttribute="bottom" secondItem="INi-nP-eCy" secondAttribute="bottom" id="Njs-33-oTn"/>
+                            <constraint firstItem="Otr-46-zQN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pjj-yT-mJk"/>
+                            <constraint firstItem="INi-nP-eCy" firstAttribute="top" secondItem="Otr-46-zQN" secondAttribute="bottom" id="YZd-IB-sIw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="Otr-46-zQN" id="NPI-3g-k9W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="314"/>
+        </scene>
+    </scenes>
+</document>
